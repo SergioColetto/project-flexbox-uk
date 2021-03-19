@@ -10,12 +10,12 @@
 
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="Location"
+        android:label="Flex Box UK"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true">
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-                   android:value="KEY" />
+                   android:value="AIzaSyBTK9Z5TELYwezUq2CNMA9PCCAYk5D4dug" />
 
         <activity
             android:name=".MainActivity"

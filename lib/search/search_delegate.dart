@@ -129,9 +129,9 @@ class DataSearch extends SearchDelegate {
 
   @override
   TextStyle get searchFieldStyle => TextStyle(
-        color: Colors.white,
-        fontSize: 16,
-      );
+    color: Colors.white,
+    fontSize: 16,
+  );
 
   @override
   ThemeData appBarTheme(BuildContext context) {

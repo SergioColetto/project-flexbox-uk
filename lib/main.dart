@@ -6,9 +6,9 @@ import 'package:provider/provider.dart';
 
 import 'components/app_theme.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(FlexBox());
 
-class MyApp extends StatelessWidget {
+class FlexBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -19,7 +19,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Location Delivery',
         home: LoadingPage(),
-        routes: {'home': (_) => MainPage(), 'loading': (_) => LoadingPage()},
+        routes: {
+          'home': (_) => MainPage(),
+          'loading': (_) => LoadingPage(),
+        },
         theme: AppTheme.buildTheme(),
       ),
     );

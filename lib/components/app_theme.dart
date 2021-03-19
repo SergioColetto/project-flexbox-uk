@@ -25,8 +25,8 @@ class AppTheme {
   }
 
   static ThemeData buildTheme() {
-    final Color primaryColor = HexColor('#54D3C2');
-    final Color secondaryColor = HexColor('#54D3C2');
+    final Color primaryColor = Color.fromRGBO(68, 61, 58, 1);
+    final Color secondaryColor = Color.fromRGBO(68, 61, 58, 1);
 
     final ColorScheme colorScheme = const ColorScheme.light().copyWith(
       primary: primaryColor,
@@ -38,10 +38,11 @@ class AppTheme {
     );
 
     final inputDecorationTheme = InputDecorationTheme(
-        hintStyle: TextStyle(
-      color: Colors.white,
-      fontSize: 16,
-    ));
+      hintStyle: TextStyle(
+        color: Colors.white,
+        fontSize: 16,
+      ),
+    );
 
     final ThemeData base = ThemeData.dark();
 

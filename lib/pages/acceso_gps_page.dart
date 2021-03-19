@@ -63,12 +63,19 @@ class _AccesoGpsPageState extends State<AccesoGpsPage>
       case PermissionStatus.granted:
         await Navigator.pushReplacementNamed(context, 'loading');
         break;
-
       case PermissionStatus.undetermined:
+        break;
       case PermissionStatus.denied:
+        break;
       case PermissionStatus.restricted:
+        break;
       case PermissionStatus.permanentlyDenied:
         openAppSettings();
+        break;
+      case PermissionStatus.limited:
+        break;
+      default:
+        break;
     }
   }
 }
